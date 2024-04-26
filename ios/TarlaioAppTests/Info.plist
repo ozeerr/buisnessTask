@@ -20,5 +20,7 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>MBXAccessToken</key>
+	<string>sk.eyJ1IjoiYWhtZXRvemVyIiwiYSI6ImNsdmZhd3NyajAxNWIycG1zcW55cWRmbXUifQ.FFpvVAfyS6qE7ERez3JshA</string>
 </dict>
 </plist>

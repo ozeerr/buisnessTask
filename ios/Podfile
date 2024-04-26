@@ -14,7 +14,12 @@ if linkage != nil
   use_frameworks! :linkage => linkage.to_sym
 end
 
+pre_install do |installer|
+  $RNMapboxMaps.pre_install(installer)
+end
+
 target 'TarlaioApp' do
+  $RNMapboxMapsVersion = '= 10.16.6'
   config = use_native_modules!
 
   use_react_native!(
@@ -29,6 +34,7 @@ target 'TarlaioApp' do
   end
 
   post_install do |installer|
+    $RNMapboxMaps.post_install(installer)
     # https://github.com/facebook/react-native/blob/main/packages/react-native/scripts/react_native_pods.rb#L197-L202
     react_native_post_install(
       installer,
