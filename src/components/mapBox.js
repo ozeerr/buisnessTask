@@ -1,26 +1,27 @@
 import React, { useEffect } from 'react'
 import { StyleSheet,  View } from 'react-native'
 import MapboxGL from '@rnmapbox/maps';
+import { mapBoxAccessToken } from '../utils/constants';
 
 
 const MapboxComponent = () => {
 
     useEffect(()=>{
-        MapboxGL.setAccessToken('sk.eyJ1IjoiYWhtZXRvemVyIiwiYSI6ImNsdmZhd3NyajAxNWIycG1zcW55cWRmbXUifQ.FFpvVAfyS6qE7ERez3JshA');
+        MapboxGL.setAccessToken(mapBoxAccessToken);
        },[])
 
   return (
    <View style={styles.container}>
-     <MapboxGL.MapView style={styles.map} minZoomLevel={15} zoomEnabled={true} styleURL='mapbox://styles/mapbox/streets-v12'  rotateEnabled={true} >
+     <MapboxGL.MapView style={styles.map} minZoomLevel={15} zoomEnabled={true} styleURL='mapbox://styles/ahmetozer/clvhbzi5l00su01qz8pd89icm/draft'  rotateEnabled={true} >
           <MapboxGL.Camera
             zoomLevel={16}
-            centerCoordinate={[32.744755969281854,39.869942587622276]}
+            centerCoordinate={[32.744755969281854,39.880]}
             animationMode='flyTo'
             animationDuration={4000}
           />
           <MapboxGL.PointAnnotation
             id="pointAnnotation"
-            coordinate={[ 32.744755969281854,39.869942587622276]}
+            coordinate={[ 32.744755969281854,39.880]}
           >
             <View style={styles.currentLocationWrapperStyle} >
               <View style={styles.currentLocationStyle}/>

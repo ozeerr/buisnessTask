@@ -9,6 +9,7 @@ import StartsCard from './ui/starsCard';
 import CircleButton from './ui/circleButton';
 
 const TopScreenContent = () => {
+  
   return (
     <SafeAreaView>
       <View

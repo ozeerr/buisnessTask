@@ -1,4 +1,4 @@
-import { Image, StyleSheet,  View } from 'react-native'
+import {  StyleSheet,  View } from 'react-native'
 import React from 'react'
 import { iconPaths } from '../../utils/constants'
 import { height } from '../../utils/constants'
@@ -8,7 +8,7 @@ const CustomIcon = () => {
     <View style={styles.container}>
         {iconPaths.map((item,index)=>(
             <TouchableOpacity key={index} style={styles.buttonStyle} >
-                <Image source={item.path} style={styles.imageStyle}/>
+               {item.path}
             </TouchableOpacity>
         ))}
     </View>
@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
         position:"absolute",bottom:height*0.18,right:20,gap:12
     },
     buttonStyle:{
-        padding:12,backgroundColor:"white",borderRadius:12
+        padding:14,backgroundColor:"white",borderRadius:12
     },
     imageStyle:{
         width:25,height:25

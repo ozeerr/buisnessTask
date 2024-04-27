@@ -4,8 +4,11 @@ import ColorLevelText from './colorLevelText';
 import {colorlevels} from '../../utils/constants';
 import {width, height} from '../../utils/constants';
 import LinearGradient from 'react-native-linear-gradient';
-import { colors } from '../../colors';
+import { COLORS } from '../../colors';
 const ColorLevelCard = () => {
+
+  const linearColors = [COLORS.green,COLORS.yellow,COLORS.orange,COLORS.red]
+
   return (
     <View style={styles.container}>
       <View style={styles.textContainer}>
@@ -13,7 +16,7 @@ const ColorLevelCard = () => {
         <Text style={styles.secondText}>(mm)</Text>
       </View>
       <LinearGradient
-        colors={colors}
+        colors={linearColors}
         start={{x: 0, y: 0}}
         end={{x: 1, y: 0}}
         style={styles.linearGradient}
@@ -37,7 +40,7 @@ export default ColorLevelCard;
 const styles = StyleSheet.create({
   container: {
     backgroundColor: 'white',
-    height: height * 0.11,
+    height: 100,
     borderRadius: 10,
     width: width * 0.68,
     position: 'absolute',
