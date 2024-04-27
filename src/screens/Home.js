@@ -1,8 +1,5 @@
 import React from 'react';
-import {
-  StyleSheet,
-  View,
-} from 'react-native';
+import {StyleSheet,View} from 'react-native';
 import MapboxComponent from '../components/mapBox';
 import TopScreenContent from '../components/topScreenContent';
 import ColorLevelCard from '../components/ui/colorLevelCard';

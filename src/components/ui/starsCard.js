@@ -9,7 +9,7 @@ const StartsCard = () => {
   return (
     <LinearGradient  start={{x: 0, y: 0}} end={{x: 1, y: 0}}  colors={[COLORS.darkblue, COLORS.blue]} style={styles.container}>
     <StarIcon/>
-    <Text style={{color:"white",fontSize:15,fontWeight:500}}>5</Text>
+    <Text style={styles.text}>5</Text>
     </LinearGradient>
   )
 }
@@ -25,6 +25,11 @@ const styles = StyleSheet.create({
         gap:5,
         alignItems:"center",
         justifyContent:"center"
+    },
+    text:{
+        color:"white",
+        fontSize:15,
+        fontWeight:500
     }
 })
 
