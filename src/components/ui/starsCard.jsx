@@ -1,9 +1,9 @@
 import { StyleSheet, Text} from 'react-native'
 import React from 'react'
-import { width } from '../../utils/constants'
 import LinearGradient from 'react-native-linear-gradient';
 import StarIcon from '../../assets/svg/Vector.svg'
 import { COLORS } from '../../colors';
+import { horizontalScale, verticalScale } from '../../utils/dimensions';
 
 const StartsCard = () => {
   return (
@@ -18,8 +18,8 @@ export default StartsCard
 
 const styles = StyleSheet.create({
     container:{
-        width:width*0.16,
-        height:33,
+        width:horizontalScale(70),
+        height:verticalScale(30),
         borderRadius:32,
         flexDirection:"row",
         gap:5,

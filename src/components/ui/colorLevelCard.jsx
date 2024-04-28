@@ -2,9 +2,9 @@ import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import ColorLevelText from './colorLevelText';
 import {colorlevels} from '../../utils/constants';
-import {width, height} from '../../utils/constants';
 import LinearGradient from 'react-native-linear-gradient';
 import { COLORS } from '../../colors';
+import { horizontalScale, verticalScale } from '../../utils/dimensions';
 const ColorLevelCard = () => {
 
   const linearColors = [COLORS.green,COLORS.yellow,COLORS.orange,COLORS.red]
@@ -40,11 +40,11 @@ export default ColorLevelCard;
 const styles = StyleSheet.create({
   container: {
     backgroundColor: 'white',
-    height: 100,
+    height: verticalScale(100),
     borderRadius: 10,
-    width: width * 0.68,
+    width: horizontalScale(260),
     position: 'absolute',
-    bottom: height * 0.18,
+    bottom: verticalScale(145),
     left: 20,
     padding: 10,
     gap: 7,

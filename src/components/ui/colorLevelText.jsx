@@ -4,7 +4,7 @@ import React from 'react';
 const ColorLevelText = ({color,text,text2}) => {
   return (
     <View style={styles.container}>
-      <Text style={{color: color, fontWeight: 500, fontSize: 14}}>
+      <Text style={[{color:color},styles.title]}>
         {text}
       </Text>
       <Text style={styles.text}>{text2}</Text>
@@ -20,5 +20,9 @@ const styles = StyleSheet.create({
     },
     text:{
         color: 'gray', fontSize: 12
+    },
+    title:{
+      fontWeight:500,
+      fontSize:14
     }
 });

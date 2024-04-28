@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
       position:"absolute",
     },
     currentLocationWrapperStyle:{
-        height: 48,
+             height: 48,
               width: 48,
               backgroundColor: "rgba(0,110,255,0.3)",
               borderRadius: 50,

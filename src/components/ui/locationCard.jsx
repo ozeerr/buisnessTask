@@ -8,7 +8,7 @@ const LocationCard = () => {
         source={{
           uri: 'https://s3-alpha-sig.figma.com/img/e8b1/986b/bb53aae2377aaba928d64cbac402fe2a?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=PP41sCTtyN8ockmp6WXu2Zl-AxIx9UNSL3S7yctYlufVgikuDVj6tczKuGPXLcqqmVYjSycEjs5Lxql3XfZnYtbDXZEslCEVlstt15RIqHGyO1JUmgzn6FGQ6VuLaFZ2ROZ5AaR9reytyzPxqkaU52gW9ZNB-pUzOyXHVqP9VOmMaZbVkmGmlnrq6~YllReqBEh3CsZjZLQ2yyZZM0NpaUcJ1jAJsxI9m7d92nOXGyF-oqNV~iTxpIJM2jJjBINi7E6NteUS~2mrw040ypZjZNRN0nCPMjmxDNRGYjivwfqcmlvaRCV5dnga9dKgTlaG1fMr0484l7HhdL6whkriwg__',
         }}
-        style={{width: 30, height: 30}}
+        style={styles.imageStyle}
       />
       <View>
         <Text style={styles.degreeText}>
@@ -44,5 +44,8 @@ const styles = StyleSheet.create({
     color: 'gray',
     fontSize: 13,
     fontWeight: 500
+  },
+  imageStyle:{
+    width:30,height:30
   }
 });

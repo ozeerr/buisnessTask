@@ -41,4 +41,3 @@ export const colorlevels = [
   },
 ];
 
-export const {width, height} = Dimensions.get('window');

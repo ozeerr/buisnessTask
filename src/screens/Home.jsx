@@ -14,14 +14,7 @@ const Home = () => {
   return (
     <View style={styles.root}>
        <BlurView
-          style={{
-            zIndex: 1,
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            right: 0,
-            height: statusBarHeight,
-          }}
+          style={[styles.blurstyle,{height:statusBarHeight}]}
           blurType="light"
           blurAmount={2}
         />
@@ -40,5 +33,12 @@ export default Home;
 const styles = StyleSheet.create({
   root: {
     flex: 1,
+  },
+  blurstyle:{
+    zIndex: 1,
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
   }
 });
